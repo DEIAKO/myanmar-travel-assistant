@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/*
+  Design tokens live here so pages stay consistent.
+  We keep a warm, readable palette (not a dark "AI dashboard" look).
+*/
+@theme {
+  --font-sans: "Segoe UI", system-ui, sans-serif;
+  --color-ink: #1c1917;
+  --color-muted: #57534e;
+  --color-cream: #faf7f2;
+  --color-sand: #efe7d9;
+  --color-teal: #1f5c56;
+  --color-teal-dark: #164842;
+  --color-accent: #c2410c;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background-color: #faf7f2;
+  background-color: var(--color-cream);
+  color: #1c1917;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
